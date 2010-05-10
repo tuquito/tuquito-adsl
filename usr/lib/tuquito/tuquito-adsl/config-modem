@@ -1,0 +1,68 @@
+#!/bin/bash
+
+FRONTEND="zenity"
+CAPTION="Configuración de modem ADSL"
+
+zona(){
+	$FRONTEND --title "$CAPTION" --list --text="¿A que zona pertenece?" --column="Zona"  "Telecom" "Telefonica" > /tmp/configsave
+
+	if [ $? = 0 ]; then
+		SAVE=`cat /tmp/configsave | tr -d '"'`
+
+		if [ "$SAVE" = "Telecom" ]; then
+			`modprobe br2684 && br2684ctl -b -c 0 -a 0.0.33 && ifconfig nas0 up`
+		elif [ "$SAVE" = "Telefonica" ]; then
+			`modprobe br2684 && br2684ctl -b -c 0 -a 0.8.35 && ifconfig nas0 up`
+		fi
+
+		$FRONTEND --title "$CAPTION" --question --text="¿Desea cargar automáticamente su modem en el inicio de Tuquito?"
+
+		if [ $? = 0 ]; then
+			test  -L /etc/rc2.d/S99amigo &&  rm /etc/rc2.d/S99amigo
+			test -f /etc/init.d/amigo-tuquito && rm -f /etc/init.d/amigo-tuquito
+
+			if [ $SAVE = "Telecom" ]; then
+				cp /usr/share/tuquito/adsl/amigo-tuquito-telecom /etc/init.d/amigo-tuquito
+			elif [ $SAVE = "Telefonica" ]; then
+				cp /usr/share/tuquito/adsl/amigo-tuquito-telefo /etc/init.d/amigo-tuquito
+			fi
+
+			ln -s /etc/init.d/amigo-tuquito /etc/rc2.d/S99amigo
+		fi
+	else
+		exit 1
+	fi
+}
+
+amigo(){
+	$FRONTEND --title="$CAPTION" --info --text="Espere que el LED link o line de su modem, quede totalmente encendido y presione Aceptar para continuar (Aprox. 40 segundos)."
+	if [ $? = 0 ]; then
+		zona && $FRONTEND --title="$CAPTION" --info --text="El modem se configuró con éxito!"; exit 0
+	else
+		exit 1
+	fi
+}
+
+USB(){
+	$FRONTEND --title "$CAPTION" --list --text="¿Que controlador es compatible con su modem?" --column="Controladores"  "Amigo/Zyxel" "Eagle" "SpeedTouch" > /tmp/configsave
+	if [ $? = 0 ]; then
+		amigo
+	else
+		exit 1
+	fi
+}
+
+Ethernet(){
+ `nm-connection-editor`
+}
+
+main(){
+	$FRONTEND --title "$CAPTION" --list --text="¿Que tipo de modem tiene?" --column="Tipos"  "USB" "Ethernet" > /tmp/configsave
+	if [ $? = 0 ]; then
+		`cat /tmp/configsave`
+	else
+		exit 1
+	fi
+}
+
+main

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Tuquito ADSL
+GenericName=Configuracón de tu conexión ADSL
+Comment=Configura tu conexión ADSL de una forma más rápida y fácil!
+Exec=tuquito-adsl
+Icon=/usr/lib/tuquito/tuquito-adsl/tuquito-adsl.svg
+Terminal=false
+Type=Application
+Encoding=UTF-8
+Categories=GNOME;GTK;Settings;
+NotShowIn=KDE
+X-KDE-SubstituteUID=true

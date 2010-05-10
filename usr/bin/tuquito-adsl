@@ -1,0 +1,2 @@
+#!/bin/bash
+gksu /usr/lib/tuquito/tuquito-adsl/tuquito-adsl.py -D 'Tuquito ADSL'

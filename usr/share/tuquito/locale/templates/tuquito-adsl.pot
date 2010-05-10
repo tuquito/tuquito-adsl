@@ -1,0 +1,66 @@
+# Traducciones para Tuquito ADSL
+# Copyright (C) 2010 - Tuquito Team!
+# This file is distributed under the same license as the Aptito package.
+# Mario Colque <mario@tuquito.org.ar>, 2010.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: tuquito-adsl 1.2\n"
+"Report-Msgid-Bugs-To: mario@tuquito.org.ar\n"
+"POT-Creation-Date: 2010-04-12 18:56-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Mario Colque <mario@tuquito.org.ar>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: tuquito-adsl.py:59
+msgid "Conectado"
+msgstr ""
+
+#: tuquito-adsl.py:64
+msgid "Conexion establecida correctamente"
+msgstr ""
+
+#: tuquito-adsl.py:80
+msgid "Desconexion realizada"
+msgstr ""
+
+#: tuquito-adsl.py:92
+msgid ""
+"<b>Cuidado!</b>\n"
+"Su modem no se ha configurado aun.\n"
+"Para hacerlo, seleccione <i>Preferencias » Configurar modem</i>.\n"
+"Una vez configurado edite su cuenta desde <i>Preferencias » Editar cuenta</"
+"i>."
+msgstr ""
+
+#: tuquito-adsl.py:93
+msgid "Cuidado!"
+msgstr ""
+
+#: tuquito-adsl.py:94
+msgid "Usuario:"
+msgstr ""
+
+#: tuquito-adsl.py:95
+msgid "Password:"
+msgstr ""
+
+#: tuquito-adsl.py:96
+msgid "Configurar modem"
+msgstr ""
+
+#: tuquito-adsl.py:97
+msgid "Editar cuenta"
+msgstr ""
+
+#: tuquito-adsl.py:98
+msgid "Mi cuenta"
+msgstr ""
+
+#: tuquito-adsl.py:164
+msgid "usuario@provedor"
+msgstr ""

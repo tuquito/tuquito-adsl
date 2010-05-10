@@ -1,0 +1,7 @@
+#!/bin/bash
+if [ "$1" == "on" ]; then
+	pon adsl
+else
+	poff adsl
+fi
+ifconfig | grep ppp | cut -d " " -f1
