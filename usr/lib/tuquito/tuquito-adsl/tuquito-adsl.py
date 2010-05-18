@@ -27,7 +27,7 @@ import gettext, os, commands, threading
 gettext.install('tuquito-adsl', '/usr/share/tuquito/locale')
 
 sudoUser = os.environ.get('SUDO_USER')
-adsl = '/home/' + sudoUser +'/.tuquito/tuquito-adsl'
+adsl = '/home/' + sudoUser + '/.tuquito/tuquito-adsl'
 flagO = True
 
 class Conect(threading.Thread):
