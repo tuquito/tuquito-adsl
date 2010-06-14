@@ -4,11 +4,10 @@ Priority: extra
 Maintainer: Mario Colque <mario@tuquito.org.ar>
 Build-Depends: debhelper (>= 7)
 Standards-Version: 3.8.1
-Homepage: http://paquetes.tuquito.org.ar
 
 Package: tuquito-adsl
 Architecture: all
-Depends: tuquito-firmware, libnotify-bin
+Depends: tuquito-firmware, br2684ctl
 Description: Configuración de modems ADSL USB
  Aplicación que permite la configuración y funcionamiento de Modems ADSL por USB.
  * Tuquito Team! - 2010

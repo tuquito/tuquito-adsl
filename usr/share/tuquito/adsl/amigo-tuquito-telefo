@@ -1,4 +1,0 @@
-#!/bin/bash
-modprobe br2684
-br2684ctl -b -c 0 -a 0.8.35
-ifconfig nas0 up 

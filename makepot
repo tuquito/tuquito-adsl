@@ -1,0 +1,3 @@
+#!/bin/bash
+
+xgettext --output=usr/share/tuquito/locale/templates/tuquito-adsl.pot --from-code=utf-8 usr/lib/tuquito/tuquito-adsl/config-modem.sh usr/lib/tuquito/tuquito-adsl/tuquito-adsl.py

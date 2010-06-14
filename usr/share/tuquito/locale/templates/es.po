@@ -3,73 +3,76 @@
 # This file is distributed under the same license as the tuquito-adsl package.
 # Mario Colque <mario@tuquito.org.ar>, 2010.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: tuquito-adsl 1.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-06-03 14:25-0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2010-06-14 14:52-0300\n"
+"Last-Translator: Mario Colque <mario@tuquito.org.ar>\n"
+"Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: usr/lib/tuquito/tuquito-adsl/config-modem.sh:6
 msgid "Configuring ADSL modem"
-msgstr ""
+msgstr "Configuración de módem ADSL"
 
 #: usr/lib/tuquito/tuquito-adsl/config-modem.sh:9
 msgid "Which zone do you belong?"
-msgstr ""
+msgstr "¿A qué zona pertenece?"
 
 #: usr/lib/tuquito/tuquito-adsl/config-modem.sh:9
 msgid "Zone"
-msgstr ""
+msgstr "Zona"
 
 #: usr/lib/tuquito/tuquito-adsl/config-modem.sh:23
 msgid ""
 "Do you want to automatically load your modem at the beginning of Tuquito?"
 msgstr ""
+"Desea cargar su modem automáticamente al inicio de Tuquito?"
 
 #: usr/lib/tuquito/tuquito-adsl/config-modem.sh:43
 msgid ""
 "Wait until the link LED of your modem, is fully on and press OK to continue "
 "(Aprox. 40 seconds)."
 msgstr ""
+"Espere a que el LED link o line de su modem, esté encendido completamente y "
+"presione Aceptar para continuar (Aprox. 40 seconds)."
 
 #: usr/lib/tuquito/tuquito-adsl/config-modem.sh:45
 msgid "The modem was configured successfully"
-msgstr ""
+msgstr "El modem se ha configurado correctamente"
 
 #: usr/lib/tuquito/tuquito-adsl/config-modem.sh:52
 msgid "What driver is compatible with your modem?"
-msgstr ""
+msgstr "¿Qué controlador es compatible con su modem?"
 
 #: usr/lib/tuquito/tuquito-adsl/config-modem.sh:52
 msgid "Drivers"
-msgstr ""
+msgstr "Controladores"
 
 #: usr/lib/tuquito/tuquito-adsl/config-modem.sh:65
 msgid "What type of modem you have?"
-msgstr ""
+msgstr "Que tipo de modem tiene?"
 
 #: usr/lib/tuquito/tuquito-adsl/config-modem.sh:65
 msgid "Types"
-msgstr ""
+msgstr "Tipos"
 
 #: usr/lib/tuquito/tuquito-adsl/tuquito-adsl.py:60
 msgid "Connected"
-msgstr ""
+msgstr "Conectado"
 
 #: usr/lib/tuquito/tuquito-adsl/tuquito-adsl.py:65
 msgid "Connection successfully established"
-msgstr ""
+msgstr "Conexión establecida"
 
 #: usr/lib/tuquito/tuquito-adsl/tuquito-adsl.py:81
 msgid "You are disconnected"
-msgstr ""
+msgstr "Se ha desconectado"
 
 #: usr/lib/tuquito/tuquito-adsl/tuquito-adsl.py:93
 msgid ""
@@ -78,35 +81,39 @@ msgid ""
 "To do this, select <i>Settings » Configure modem</i>.\n"
 "Once configured, edit your account from <i>Settings » Edit account</i>."
 msgstr ""
+"<b>¡Atención!</b>\n"
+"Su modem no está configurado aún.\n"
+"Para hacerlo, seleccione <i>Configuraciones » Configurar modem</i>.\n"
+"Una vez configurado, edite su cuenta desde <i>Configuraciones » Editar cuenta</i>."
 
 #: usr/lib/tuquito/tuquito-adsl/tuquito-adsl.py:94
 msgid "Attention!"
-msgstr ""
+msgstr "¡Atención!"
 
 #: usr/lib/tuquito/tuquito-adsl/tuquito-adsl.py:95
 msgid "_Settings"
-msgstr ""
+msgstr "_Preferencias"
 
 #: usr/lib/tuquito/tuquito-adsl/tuquito-adsl.py:96
 msgid "User:"
-msgstr ""
+msgstr "Usuario:"
 
 #: usr/lib/tuquito/tuquito-adsl/tuquito-adsl.py:97
 msgid "Password:"
-msgstr ""
+msgstr "Contraseña"
 
 #: usr/lib/tuquito/tuquito-adsl/tuquito-adsl.py:98
 msgid "Configure modem"
-msgstr ""
+msgstr "Configurar modem"
 
 #: usr/lib/tuquito/tuquito-adsl/tuquito-adsl.py:99
 msgid "Edit account"
-msgstr ""
+msgstr "Editar cuenta"
 
 #: usr/lib/tuquito/tuquito-adsl/tuquito-adsl.py:100
 msgid "My account"
-msgstr ""
+msgstr "Mi cuenta"
 
 #: usr/lib/tuquito/tuquito-adsl/tuquito-adsl.py:170
 msgid "user@provider"
-msgstr ""
+msgstr "usuario@proveedor"

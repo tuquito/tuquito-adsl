@@ -1,3 +1,9 @@
+tuquito-adsl (1.2-8) lucid; urgency=low
+
+  * traducciones agregadas es, pt
+
+ -- Mario Colque <mario@tuquito.org.ar>  Mon, 14 Jun 2010 14:55:47 -0300
+
 tuquito-adsl (1.2-7) lucid; urgency=low
 
   * correccion en ruta de temporal

@@ -57,12 +57,12 @@ class Conect(threading.Thread):
 				os.system('echo "nameserver 208.67.222.222" > /etc/resolv.conf')
 				os.system('echo "nameserver 208.67.220.220" >> /etc/resolv.conf')
 				self.builder.get_object('window').window.set_cursor(None)
-				self.builder.get_object('statusicon').set_tooltip(_('Conectado'))
+				self.builder.get_object('statusicon').set_tooltip(_('Connected'))
 				self.builder.get_object('statusicon').set_blinking(False)
 				self.builder.get_object('window').hide()
 				self.builder.get_object('disconect').set_sensitive(True)
 				flagO = False
-				self.notify(_('Conexion establecida correctamente'), '/usr/lib/tuquito/tuquito-adsl/tuquito-adsl.svg')
+				self.notify(_('Connection successfully established'), '/usr/lib/tuquito/tuquito-adsl/tuquito-adsl.svg')
 				return True
 		else:
 			gtk.gdk.threads_enter()
@@ -78,7 +78,7 @@ class Conect(threading.Thread):
 			self.builder.get_object('statusicon').set_visible(False)
 			self.builder.get_object('conect').set_sensitive(True)
 			gtk.gdk.threads_leave()
-			self.notify(_('Desconexion realizada'), '/usr/lib/tuquito/tuquito-adsl/desconectado.svg')
+			self.notify(_('You are disconnected'), '/usr/lib/tuquito/tuquito-adsl/desconectado.svg')
 
 class Window:
 	def __init__(self):
@@ -90,13 +90,14 @@ class Window:
 		self.menu = self.builder.get_object('menu')
 		self.btnDisc = self.builder.get_object('disconect')
 		self.btnCon = self.builder.get_object('conect')
-		self.builder.get_object('message').set_label(_('<b>Cuidado!</b>\nSu modem no se ha configurado aun.\nPara hacerlo, seleccione <i>Preferencias » Configurar modem</i>.\nUna vez configurado edite su cuenta desde <i>Preferencias » Editar cuenta</i>.'))
-		self.builder.get_object('messageDialog').set_title(_('Cuidado!'))
-		self.builder.get_object('label_user').set_label('<b>' + _('Usuario:') + '</b>')
+		self.builder.get_object('message').set_label(_('<b>Attention!</b>\nYour modem is not configured yet.\nTo do this, select <i>Settings » Configure modem</i>.\nOnce configured, edit your account from <i>Settings » Edit account</i>.'))
+		self.builder.get_object('messageDialog').set_title(_('Attention!'))
+		self.builder.get_object('menuitem1').set_label(_('_Settings'))
+		self.builder.get_object('label_user').set_label('<b>' + _('User:') + '</b>')
 		self.builder.get_object('label_pass').set_label('<b>' + _('Password:') + '</b>')
-		self.builder.get_object('menuModem').set_label(_('Configurar modem'))
-		self.builder.get_object('menuCuenta').set_label(_('Editar cuenta'))
-		self.builder.get_object('acount').set_title(_('Mi cuenta'))
+		self.builder.get_object('menuModem').set_label(_('Configure modem'))
+		self.builder.get_object('menuCuenta').set_label(_('Edit account'))
+		self.builder.get_object('acount').set_title(_('My account'))
 		self.builder.connect_signals(self)
 
 		menuItem=gtk.ImageMenuItem(gtk.STOCK_DISCONNECT)
@@ -128,7 +129,7 @@ class Window:
 		pass
 
 	def configModem(self, widget):
-		os.system('/usr/lib/tuquito/tuquito-adsl/config-modem &')
+		os.system('/usr/lib/tuquito/tuquito-adsl/config-modem.sh &')
 
 	def hideWin(self, widget, data=None):
 		global flagO
@@ -166,7 +167,7 @@ class Window:
 			val = val.replace('\n', '')
 			if par == 'USER':
 				if val == '':
-					user = _('usuario@provedor')
+					user = _('user@provider')
 				else:
 					user = str(val)
 			elif par == 'PASS':
