@@ -90,7 +90,7 @@ class Window:
 		self.menu = self.builder.get_object('menu')
 		self.btnDisc = self.builder.get_object('disconect')
 		self.btnCon = self.builder.get_object('conect')
-		self.builder.get_object('message').set_label(_('<b>Attention!</b>\nYour modem is not configured yet.\nTo do this, select <i>Settings » Configure modem</i>.\nOnce configured, edit your account from <i>Settings » Edit account</i>.'))
+		self.builder.get_object('message').set_label('<b>%s</b>\n%s<i>%s » %s</i>.\n%s<i>%s » %s</i>.' % (_('Attention!'), _('Your modem is not configured yet.\nTo do this, select '), _('Settings'), _('Configure modem'), _('Once configured, edit your account from '), _('Settings'), _('Edit account')))
 		self.builder.get_object('messageDialog').set_title(_('Attention!'))
 		self.builder.get_object('menuitem1').set_label(_('_Settings'))
 		self.builder.get_object('label_user').set_label('<b>' + _('User:') + '</b>')

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tuquito-adsl 1.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-06-03 14:25-0300\n"
+"POT-Creation-Date: 2010-06-22 14:42-0300\n"
 "PO-Revision-Date: 2010-06-14 14:54-0300\n"
 "Last-Translator: Carlos Pessoa de Araújo <carlosfelipe@tuquito.org.ar>\n"
 "Language-Team: Portuguese\n"
@@ -31,16 +31,15 @@ msgstr "Zona"
 #: usr/lib/tuquito/tuquito-adsl/config-modem.sh:23
 msgid ""
 "Do you want to automatically load your modem at the beginning of Tuquito?"
-msgstr ""
-"Deseja carregar o seu modem automaticamente ao iniciar o Tuquito?"
+msgstr "Deseja carregar o seu modem automaticamente ao iniciar o Tuquito?"
 
 #: usr/lib/tuquito/tuquito-adsl/config-modem.sh:43
 msgid ""
 "Wait until the link LED of your modem, is fully on and press OK to continue "
 "(Aprox. 40 seconds)."
 msgstr ""
-"Aguarde até que o LED Link do seu modem esteja aceso (sem piscar) e "
-"aceite para continuar (Aprox. 40 segundos)."
+"Aguarde até que o LED Link do seu modem esteja aceso (sem piscar) e aceite "
+"para continuar (Aprox. 40 segundos)."
 
 #: usr/lib/tuquito/tuquito-adsl/config-modem.sh:45
 msgid "The modem was configured successfully"
@@ -75,20 +74,36 @@ msgid "You are disconnected"
 msgstr "Você está desconectado"
 
 #: usr/lib/tuquito/tuquito-adsl/tuquito-adsl.py:93
-msgid ""
-"<b>Attention!</b>\n"
-"Your modem is not configured yet.\n"
-"To do this, select <i>Settings » Configure modem</i>.\n"
-"Once configured, edit your account from <i>Settings » Edit account</i>."
-msgstr ""
-"<b>Atenção!</b>\n"
-"O seu modem não está configurado ainda.\n"
-"Para configurá-lo, selecione <i>Configurações » Configurar modem</i>.\n"
-"Uma vez configurado, edite a sua conta em <i>Configurações » Editar conta</i>."
-
 #: usr/lib/tuquito/tuquito-adsl/tuquito-adsl.py:94
 msgid "Attention!"
 msgstr "Atenção!"
+
+#: usr/lib/tuquito/tuquito-adsl/tuquito-adsl.py:93
+msgid ""
+"Your modem is not configured yet.\n"
+"To do this, select "
+msgstr ""
+"O seu modem não está configurado ainda.\n"
+"Para configurá-lo, selecione "
+
+#: usr/lib/tuquito/tuquito-adsl/tuquito-adsl.py:93
+msgid "Settings"
+msgstr "Configurações"
+
+#: usr/lib/tuquito/tuquito-adsl/tuquito-adsl.py:93
+#: usr/lib/tuquito/tuquito-adsl/tuquito-adsl.py:98
+msgid "Configure modem"
+msgstr "Configurar modem"
+
+#: usr/lib/tuquito/tuquito-adsl/tuquito-adsl.py:93
+msgid "Once configured, edit your account from "
+msgstr ""
+"Uma vez configurado, edite a sua conta em "
+
+#: usr/lib/tuquito/tuquito-adsl/tuquito-adsl.py:93
+#: usr/lib/tuquito/tuquito-adsl/tuquito-adsl.py:99
+msgid "Edit account"
+msgstr "Editar conta"
 
 #: usr/lib/tuquito/tuquito-adsl/tuquito-adsl.py:95
 msgid "_Settings"
@@ -102,14 +117,6 @@ msgstr "Usuário:"
 msgid "Password:"
 msgstr ""
 
-#: usr/lib/tuquito/tuquito-adsl/tuquito-adsl.py:98
-msgid "Configure modem"
-msgstr "Configurar modem"
-
-#: usr/lib/tuquito/tuquito-adsl/tuquito-adsl.py:99
-msgid "Edit account"
-msgstr "Editar conta"
-
 #: usr/lib/tuquito/tuquito-adsl/tuquito-adsl.py:100
 msgid "My account"
 msgstr "Minha conta"
@@ -117,3 +124,15 @@ msgstr "Minha conta"
 #: usr/lib/tuquito/tuquito-adsl/tuquito-adsl.py:170
 msgid "user@provider"
 msgstr "usuario@proveedor"
+
+#~ msgid ""
+#~ "<b>Attention!</b>\n"
+#~ "Your modem is not configured yet.\n"
+#~ "To do this, select <i>Settings » Configure modem</i>.\n"
+#~ "Once configured, edit your account from <i>Settings » Edit account</i>."
+#~ msgstr ""
+#~ "<b>Atenção!</b>\n"
+#~ "O seu modem não está configurado ainda.\n"
+#~ "Para configurá-lo, selecione <i>Configurações » Configurar modem</i>.\n"
+#~ "Uma vez configurado, edite a sua conta em <i>Configurações » Editar "
+#~ "conta</i>."

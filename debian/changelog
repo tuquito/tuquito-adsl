@@ -1,3 +1,9 @@
+tuquito-adsl (1.3-1) lucid; urgency=low
+
+  * Correción en traducciones
+
+ -- Mario Colque <mario@tuquito.org.ar>  Tue, 22 Jun 2010 14:48:31 -0300
+
 tuquito-adsl (1.2-9) lucid; urgency=low
 
   * correccion en directorios po

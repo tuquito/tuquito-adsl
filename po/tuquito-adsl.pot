@@ -1,19 +1,19 @@
-# Traducciones para Tuquito ADSL
-# Copyright (C) 2010 Tuquito Team!
-# This file is distributed under the same license as the tuquito-adsl package.
-# Mario Colque <mario@tuquito.org.ar>, 2010.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: tuquito-adsl 1.2\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-06-03 14:25-0300\n"
+"POT-Creation-Date: 2010-06-22 14:42-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: usr/lib/tuquito/tuquito-adsl/config-modem.sh:6
@@ -72,15 +72,32 @@ msgid "You are disconnected"
 msgstr ""
 
 #: usr/lib/tuquito/tuquito-adsl/tuquito-adsl.py:93
-msgid ""
-"<b>Attention!</b>\n"
-"Your modem is not configured yet.\n"
-"To do this, select <i>Settings » Configure modem</i>.\n"
-"Once configured, edit your account from <i>Settings » Edit account</i>."
-msgstr ""
-
 #: usr/lib/tuquito/tuquito-adsl/tuquito-adsl.py:94
 msgid "Attention!"
+msgstr ""
+
+#: usr/lib/tuquito/tuquito-adsl/tuquito-adsl.py:93
+msgid ""
+"Your modem is not configured yet.\n"
+"To do this, select "
+msgstr ""
+
+#: usr/lib/tuquito/tuquito-adsl/tuquito-adsl.py:93
+msgid "Settings"
+msgstr ""
+
+#: usr/lib/tuquito/tuquito-adsl/tuquito-adsl.py:93
+#: usr/lib/tuquito/tuquito-adsl/tuquito-adsl.py:98
+msgid "Configure modem"
+msgstr ""
+
+#: usr/lib/tuquito/tuquito-adsl/tuquito-adsl.py:93
+msgid "Once configured, edit your account from "
+msgstr ""
+
+#: usr/lib/tuquito/tuquito-adsl/tuquito-adsl.py:93
+#: usr/lib/tuquito/tuquito-adsl/tuquito-adsl.py:99
+msgid "Edit account"
 msgstr ""
 
 #: usr/lib/tuquito/tuquito-adsl/tuquito-adsl.py:95
@@ -93,14 +110,6 @@ msgstr ""
 
 #: usr/lib/tuquito/tuquito-adsl/tuquito-adsl.py:97
 msgid "Password:"
-msgstr ""
-
-#: usr/lib/tuquito/tuquito-adsl/tuquito-adsl.py:98
-msgid "Configure modem"
-msgstr ""
-
-#: usr/lib/tuquito/tuquito-adsl/tuquito-adsl.py:99
-msgid "Edit account"
 msgstr ""
 
 #: usr/lib/tuquito/tuquito-adsl/tuquito-adsl.py:100
