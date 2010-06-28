@@ -1,7 +1,8 @@
 [Desktop Entry]
 Name=Tuquito ADSL
-GenericName=Configuracón de tu conexión ADSL
-Comment=Configura tu conexión ADSL de una forma más rápida y fácil!
+Comment=Configure your ADSL connection in a faster and easier!
+Comment[es]=Configura tu conexión ADSL de una forma más rápida y fácil!
+Comment[pt]=Configuração de modem ADSL
 Exec=tuquito-adsl
 Icon=/usr/lib/tuquito/tuquito-adsl/tuquito-adsl.svg
 Terminal=false

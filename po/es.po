@@ -123,21 +123,3 @@ msgstr "Mi cuenta"
 #: usr/lib/tuquito/tuquito-adsl/tuquito-adsl.py:170
 msgid "user@provider"
 msgstr "usuario@proveedor"
-
-#~ msgid "Settings » Configure modem"
-#~ msgstr "Configuraciones » Configurar modem"
-
-#~ msgid "Settings » Edit account"
-#~ msgstr "Configuraciones » Editar cuenta"
-
-#~ msgid ""
-#~ "<b>Attention!</b>\n"
-#~ "Your modem is not configured yet.\n"
-#~ "To do this, select <i>Settings » Configure modem</i>.\n"
-#~ "Once configured, edit your account from <i>Settings » Edit account</i>."
-#~ msgstr ""
-#~ "<b>¡Atención!</b>\n"
-#~ "Su modem no está configurado aún.\n"
-#~ "Para hacerlo, seleccione <i>Configuraciones » Configurar modem</i>.\n"
-#~ "Una vez configurado, edite su cuenta desde <i>Configuraciones » Editar "
-#~ "cuenta</i>."
